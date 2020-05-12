@@ -39,16 +39,28 @@ while opx!=0:
             elif opy==3 and al==True:
                 print("Lutador ja esta cadastrado") 
             elif opy==0:
+                opx =99
+                opy=99
                 print("Saindo")
+                break
+
     if opx==2:
         while opz !=0:
             opz=int(input("Escolha uma das opçoes:\n0 - Retornar ao menu anterior\n1 - Mostrar Futebolista\n2 - Mostrar Nadador \n3 - Mostrar Lutador de MMA\nEscolha uma poção: "))
             if opz==1 and af==True:
                 print(f.Faz_o_que(f.nome,f.gol))
+            elif opz==1 and af==False:
+                print("Atleta não cadastrado")
             elif opz==2 and an==True:
                 print(n.Faz_o_que(n.nome,n.nmeda,n.noli))
+            elif opz==2 and an==False:
+                print("Atleta não cadastrado")
             elif opz==3 and al==True:
                 print(l.Faz_o_que(l.nome,l.cat,l.cint))
+            elif opz==3 and al==False:
+                print("Atleta não cadastrado")
             elif opz==0:
+                opz=99
                 print("Saindo")
+                break
     
